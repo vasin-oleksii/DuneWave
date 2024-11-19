@@ -87,14 +87,14 @@ function createNavigation() {
               ></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2">locaboard</a>
+              <a href="./locaboard.html" class="nav-link link-body-emphasis px-2">locaboard</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link link-body-emphasis px-2">Pricing</a>
             </li>
             <li class="nav-item">
               <a
-                href="/pages/produits/produit.html"
+                href="./produit.html"
                 class="nav-link link-body-emphasis px-2"
                 >Produits</a
               >
