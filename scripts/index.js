@@ -83,14 +83,11 @@ function createNavigation() {
                 class="nav-link link-body-emphasis px-2 active burger"
                 aria-current="page"
               >
-                <i class="bi bi-list"></i
+                <i class="bi bi-list">Menu</i
               ></a>
             </li>
             <li class="nav-item">
-              <a href="./locaboard.html" class="nav-link link-body-emphasis px-2">locaboard</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2">Pricing</a>
+              <a href="./locaboard.html" class="nav-link link-body-emphasis px-2">Locaboard</a>
             </li>
             <li class="nav-item">
               <a
@@ -122,7 +119,6 @@ function createNavigation() {
           </ul>
         </div>
       </nav>`;
-
   document.body.prepend(header);
 
   const footer = document.createElement("footer");
