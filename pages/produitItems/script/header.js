@@ -79,7 +79,7 @@ function createNavigation() {
       
               <ul class="nav col-md-4 justify-content-end">
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-body-secondary">CGU</a>
+                  <a href="../CGU.html" class="nav-link px-2 text-body-secondary">CGU</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link px-2 text-body-secondary"
@@ -92,7 +92,7 @@ function createNavigation() {
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-body-secondary"
+                  <a href="../PolitiqueCookies.html" class="nav-link px-2 text-body-secondary"
                     >Politique Cookies</a
                   >
                 </li>
