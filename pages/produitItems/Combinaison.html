@@ -89,9 +89,10 @@
                   />
                 </div>
                 <div class="d-flex">
-                  <button type="submit" class="btn btn-primary w-50 ">
-                    Réserver
-                  </button>
+                  
+                  <form action="#" method="post" onsubmit="return confirm('Votre réservation est bien prise en compte jusqu\'au ' + new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString('fr-FR'))">              
+                    <button type="submit" class="btn btn-primary w-50 ">Réserver</button>
+                </form>
                   <button type="submit" class="btn btn-primary w-50 ms-3">
                     Ajouter aux favoris
                   </button>
