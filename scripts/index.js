@@ -89,10 +89,10 @@ function createNavigation() {
       </a>
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="./CGU.html" class="nav-link px-2 text-body-secondary">CGU</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nous Contacter</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Mentions Légales</a></li>
+        <li class="nav-item"><a href="./NousContacter.html" class="nav-link px-2 text-body-secondary">Nous Contacter</a></li>
+        <li class="nav-item"><a href="./mentionsLégales.html" class="nav-link px-2 text-body-secondary">Mentions Légales</a></li>
         <li class="nav-item"><a href="./PolitiqueCookies.html" class="nav-link px-2 text-body-secondary">Politique Cookies</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Plan Du Site</a></li>
+        <li class="nav-item"><a href="./planDuSite.html" class="nav-link px-2 text-body-secondary">Plan Du Site</a></li>
       </ul>
     </footer>`;
   document.body.append(footer);
