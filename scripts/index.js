@@ -63,7 +63,7 @@ function createNavigation() {
                 aria-expanded="false"
               >
                 <img
-                  src="https://github.com/mdo.png"
+                  src="https://cdn-icons-png.flaticon.com/512/5577/5577995.png"
                   alt="mdo"
                   width="32"
                   height="32"
