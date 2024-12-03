@@ -50,14 +50,14 @@ function createNavigation() {
           </a>
           <ul class="nav">
             <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2">Login</a>
+              <a href="./monCompteConnection.html" class="nav-link link-body-emphasis px-2">Login</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2">Sign up</a>
+              <a href="./monCompteInscription.html" class="nav-link link-body-emphasis px-2">Sign up</a>
             </li>
             <li>
               <a
-                href="#"
+                href="./monCompte.html"
                 class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
