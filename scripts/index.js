@@ -22,12 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.querySelector(".search-form");
   searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const searchQuery = document
-      .querySelector(".search-input")
-      .value.toLowerCase();
-    if (searchQuery.includes("combinaison")) {
-      window.location.href = "./Combinaison.html";
-    }
   });
 });
 
