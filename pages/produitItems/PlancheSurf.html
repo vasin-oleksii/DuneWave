@@ -3,32 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiche Produit - Bootstrap 5</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Planche de Surf</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
 
-    <link rel="stylesheet" href="./styles/card.css">
-
+    <link rel="stylesheet" href="./styles/card.css" />
   </head>
   <body>
-   
-   
-    <div class="product-image">
     <div class="container my-5">
       <div class="card shadow">
         <div class="row g-0">
           <div class="col-md-5">
-            <img
-              src="/pages/image/planche-surf.jpg"
-              class="img-fluid product-image"
-              alt="Produit"
-            />
+            <div class="image-container">
+              <img
+                src="/pages/image/planche-surf.jpg"
+                class="img-fluid zoom-image"
+                alt="Produit"
+              />
+            </div>
           </div>
           <div class="col-md-7">
             <div class="card-body">
-              <h1 class="card-title">Planche de Surf </h1>
+              <h1 class="card-title">Planche de Surf</h1>
               <p class="card-text">
-              🏄‍♂️ Explorez les vagues avec style grâce à ce surf alliant performance et design. 🌊 
-              <br>Conçu pour tous les niveaux, il offre une stabilité optimale et une maniabilité exceptionnelle, parfait pour dompter les petites houles comme les grosses vagues. Léger, robuste et esthétique, il devient votre meilleur allié pour des sessions inoubliables. Prêt à vivre l’océan autrement ?</br>
+                🏄‍♂️ Explorez les vagues avec style grâce à ce surf alliant
+                performance et design. 🌊
+                <br />
+                Conçu pour tous les niveaux, il offre une stabilité optimale et
+                une maniabilité exceptionnelle, parfait pour dompter les petites
+                houles comme les grosses vagues. Léger, robuste et esthétique,
+                il devient votre meilleur allié pour des sessions inoubliables.
+                Prêt à vivre l’océan autrement ?
               </p>
               <div>
                 <strong>Avis client :</strong>
@@ -66,46 +73,52 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="periode-location" class="form-label"
-                    >Période location :</label
-                  >
-                  <select
-                    class="form-select"
-                    id="periode-location"
-                    name="periode-location"
-                    required
-                  >
-                    <option value="semaines">Semaines</option>
-                    <option value="jours">Jours</option>
-                  </select>
-                </div>
-                <div class="mb-3">
                   <label for="duree" class="form-label">Durée :</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="duree"
-                    name="duree"
-                    min="1"
-                    required
-                  />
+                  <div class="d-flex">
+                    <input
+                      type="number"
+                      class="form-control me-2"
+                      id="duree"
+                      name="duree"
+                      min="1"
+                      placeholder="Saisir une durée"
+                      required
+                    />
+                    <select
+                      class="form-select"
+                      id="unite-duree"
+                      name="unite-duree"
+                      required
+                    >
+                      <option value="jours">Jours</option>
+                      <option value="semaines">Semaines</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="d-flex">
-        
-                  <form action="#" method="post" onsubmit="return confirm('Votre réservation est bien prise en compte jusqu\'au ' + new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString('fr-FR'))">              
-                    <button type="submit" class="btn btn-primary w-50 ">Réserver</button>
-                </form>
-                  <button type="submit" class="btn btn-primary w-50 ms-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-50"
+                    id="reserve-button"
+                  >
+                    Réserver
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary w-50 ms-3"
+                    id="favorite-button"
+                  >
                     Ajouter aux favoris
                   </button>
+                </div>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./script/reserv.js"></script>
-  <script src="./script/header.js"></script>
+
+    <script src="./script/header.js"></script>
+    <script src="./script/reserv.js"></script>
   </body>
 </html>
