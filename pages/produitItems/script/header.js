@@ -85,11 +85,14 @@ function createBreadcrumbs() {
   const breadcrumbs = document.createElement("nav");
   breadcrumbs.setAttribute("aria-label", "breadcrumb");
   breadcrumbs.innerHTML = `
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Current Page</li>
-        </ol>
-      `;
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="../produit.html">Produits</a></li>
+      <li class="breadcrumb-item"><a href="../produitCategory/produitsMarques.html">Produits Marques</a></li>
+      <li class="breadcrumb-item"><a href="../produitCategory/produitsRayons.html">Produits Rayons</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Current Page</li>
+    </ol>
+  `;
   const container = document.querySelector(".container");
   if (container) {
     container.insertAdjacentElement("beforebegin", breadcrumbs);
