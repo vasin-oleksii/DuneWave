@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nous Contacter</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous Contacter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container my-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="mb-4">Envoyez-nous un message</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Votre adresse email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Objet</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Sujet de votre message"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
 
-  <main class="container my-5">
-    <div class="row">
-      <div class="col-lg-8">
-        <h2 class="mb-4">Envoyez-nous un message</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Votre adresse email" required>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Objet</label>
-            <input type="text" class="form-control" id="subject" placeholder="Sujet de votre message">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Votre message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+        <div class="col-lg-4">
+          <h2 class="mb-4">Nos coordonnées</h2>
+          <p>
+            <strong>Adresse :</strong> Plage De La Chambre D'Amour , 64600 ,
+            Anglet
+          </p>
+          <p>
+            <strong>Email :</strong>
+            <a href="mailto:vasin.oleksii@gmail.com" class="text-primary">
+              vasin.oleksii@gmail.com
+            </a>
+          </p>
+          <p>
+            <strong>Téléphone :</strong>
+            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+          </p>
+
+          <p>
+            <strong>Horaires :</strong><br />
+            Lundi - Vendredi : 9h - 18h<br />
+            Samedi : 10h - 14h<br />
+            Dimanche : Fermé
+          </p>
+        </div>
       </div>
+    </main>
 
-      <div class="col-lg-4">
-        <h2 class="mb-4">Nos coordonnées</h2>
-        <p><strong>Adresse :</strong> Plage De La Chambre D'Amour , 64600 , Anglet</p>
-        <p><strong>Email :</strong> <a href="vasin.oleksii@gmail.com">vasin.oleksii@gmail.com</a></p>
-        <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
-        <p><strong>Horaires :</strong><br>
-          Lundi - Vendredi : 9h - 18h<br>
-          Samedi : 10h - 14h<br>
-          Dimanche : Fermé
-        </p>
-      </div>
-    </div>
-  </main>
-
-
- 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <script src="/scripts/index.js"></script>
-</body>
+    <script src="/scripts/index.js"></script>
+  </body>
 </html>
