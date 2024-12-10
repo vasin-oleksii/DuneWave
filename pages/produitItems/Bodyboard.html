@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/card.css">
   </head>
   <body>
     <div class="container my-5">
@@ -23,34 +23,24 @@
               />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    
-    
           <div class="col-md-7">
             <div class="card-body">
               <h1 class="card-title">Bodyboard</h1>
               <p class="card-text">
-                🏄‍♂️ Vivez l'adrénaline des vagues avec notre Bodyboard de rêve !
-                🌊
+                🏄‍♂️ Vivez l'adrénaline des vagues avec notre Bodyboard de rêve ! 🌊
                 <br />
                 Parfait pour les riders de tous niveaux, ce bodyboard allie
-                performance, robustesse et un design éclatant. Il est conçu pour
-                dompter les vagues avec style et agilité.
+                performance, robustesse et un design éclatant.
               </p>
               <div>
                 <strong>Avis client :</strong>
-                <span class="text-warning">★★☆☆☆</span> (2.2 - 62 avis)
+                <span class="text-warning">★★★☆☆</span> (3.2 - 822 avis)
               </div>
               <div class="my-3">
                 <strong>Couleurs disponibles :</strong>
-                <span class="color-dot" style="background-color: black"></span>
-                <span class="color-dot" style="background-color: gray"></span>
-                <span
-                  class="color-dot"
-                  style="background-color: white; border: 1px solid black"
-                ></span>
+                <span class="color-dot black"></span>
+                <span class="color-dot gray"></span>
+                <span class="color-dot white"></span>
               </div>
               <div>
                 <strong>Tailles disponibles :</strong>
@@ -63,9 +53,7 @@
               </div>
               <form id="reservation-form" class="mt-4">
                 <div class="mb-3">
-                  <label for="date-location" class="form-label"
-                    >Date début location :</label
-                  >
+                  <label for="date-location" class="form-label">Date début location :</label>
                   <input
                     type="date"
                     class="form-control"
@@ -75,35 +63,36 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="periode-location" class="form-label"
-                    >Période location :</label
-                  >
-                  <select
-                    class="form-select"
-                    id="periode-location"
-                    name="periode-location"
-                    required
-                  >
-                    <option value="semaines">Semaines</option>
-                    <option value="jours">Jours</option>
-                  </select>
-                </div>
-                <div class="mb-3">
                   <label for="duree" class="form-label">Durée :</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="duree"
-                    name="duree"
-                    min="1"
-                    required
-                  />
+                  <div class="d-flex">
+                    <input
+                      type="number"
+                      class="form-control me-2"
+                      id="duree"
+                      name="duree"
+                      min="1"
+                      placeholder="Saisir une durée"
+                      required
+                    />
+                    <select
+                      class="form-select"
+                      id="unite-duree"
+                      name="unite-duree"
+                      required
+                    >
+                      <option value="jours">Jours</option>
+                      <option value="semaines">Semaines</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="d-flex">
-                  
-                  <form action="#" method="post" onsubmit="return confirm('Votre réservation est bien prise en compte jusqu\'au ' + new Date(new Date().setDate(new Date().getDate() + 7)).toLocaleDateString('fr-FR'))">              
-                    <button type="submit" class="btn btn-primary w-50 ">Réserver</button>
-                </form>
+                  <button
+                    type="button"
+                    id="reserve-button"
+                    class="btn btn-primary w-50"
+                  >
+                    Réserver
+                  </button>
                   <button type="button" class="btn btn-secondary w-50 ms-3">
                     Ajouter aux favoris
                   </button>
@@ -114,6 +103,7 @@
         </div>
       </div>
     </div>
+    <script src="./script/reserv.js"></script>
     <script src="./script/header.js"></script>
   </body>
 </html>

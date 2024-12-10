@@ -1,0 +1,42 @@
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.zoom-image {
+  transition: transform 0.4s ease;
+}
+
+.image-container:hover .zoom-image {
+  transform: scale(1.2);
+}
+
+/* Styles pour les cercles de couleur */
+.color-dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.color-dot.black {
+  background-color: black;
+}
+
+.color-dot.gray {
+  background-color: gray;
+}
+
+.color-dot.white {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.color-dot:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in-out;
+}
