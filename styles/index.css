@@ -14,3 +14,9 @@
 .vh-60 {
   height: 60vh;
 }
+#flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

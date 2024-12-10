@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  createBreadcrumbs();
   createNavigation();
 
   const burgerMenu = document.querySelector(".burger");
@@ -78,4 +79,19 @@ function createNavigation() {
       </ul>
     </footer>`;
   document.body.append(footer);
+}
+
+function createBreadcrumbs() {
+  const breadcrumbs = document.createElement("nav");
+  breadcrumbs.setAttribute("aria-label", "breadcrumb");
+  breadcrumbs.innerHTML = `
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Current Page</li>
+    </ol>
+  `;
+  const container = document.querySelector(".container");
+  if (container) {
+    container.insertAdjacentElement("beforebegin", breadcrumbs);
+  }
 }
